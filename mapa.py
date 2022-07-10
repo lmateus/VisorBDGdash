@@ -58,7 +58,7 @@ class GeneraMapa():
 
         self.mapa = html.Div([
             dl.Map(children=[
-                dl.TileLayer(url),
+                dl.TileLayer(url,attribution),
                 dl.GeoJSON(data=self.geojson, id="geojson")
                 ], style={'width': '95%', 'height': '500px','marginLeft': 20, 'marginTop': 25}, center=(5.544477, -73.357466), zoom=14),
             ])
